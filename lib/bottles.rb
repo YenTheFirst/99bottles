@@ -19,4 +19,8 @@ class Bottles
     what_you_do(num) +", "+ \
     "#{num_bottles(next_num)} of beer on the wall.\n"
   end
+
+  def verses(*nums)
+    nums.map(&self.method(:verse)).join("\n")
+  end
 end

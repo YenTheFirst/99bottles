@@ -23,4 +23,8 @@ class Bottles
   def verses(high, low)
     high.downto(low).map(&self.method(:verse)).join("\n")
   end
+
+  def song
+    verses(99, 0)
+  end
 end
